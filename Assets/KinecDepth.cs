@@ -73,7 +73,7 @@ public class KinecDepth : MonoBehaviour
             //{
             //var curVal = (float)_Data[x * y + y];
 
-            logFile.Write(String.Format("x:{0} y:{1} ", curPnt.X, curPnt.Y));
+           // logFile.Write(String.Format("x:{0} y:{1} ", curPnt.X, curPnt.Y));
             var curVal = (float)_Data[i];
             logFile.Write("||" + curVal);
             curVal = curVal > minDist ? curVal : minDist;
