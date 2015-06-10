@@ -111,7 +111,9 @@ public class KinecDepth : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        logFile.Close();
+        if (logFile != null) {
+            logFile.Close();
+        }
         if (_Reader != null)
         {
             _Reader.Dispose();
